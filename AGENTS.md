@@ -31,13 +31,8 @@ The NotebookLM CLI is available in this environment. Use the `notebooklm` skill
 or CLI when the task involves NotebookLM sources, summaries, Q&A, artifacts, or
 adding course materials.
 
-Previously recorded related NotebookLM project (observation date not recorded):
-
-- Title: `Statistical Rethinking 2026`
-- Notebook ID: `6d82b4d0-addc-4526-91e7-d170227d39cc`
-- Previously observed sources: lecture YouTube sources and book chapter PDFs
-
-Recheck the notebook and its sources before relying on live availability.
+Read [source access](docs/source-access.md#notebooklm) for the previously recorded
+notebook and sources; recheck them before relying on live availability.
 
 Before relying on NotebookLM output, verify important claims against the local
 course files, source PDFs, scripts, or primary genomics methods papers. Treat
@@ -45,20 +40,12 @@ NotebookLM as a retrieval and synthesis aid, not as the source of truth.
 
 ## Local Source Material
 
-Known local textbook-related PDFs include:
+Read [source access](docs/source-access.md#local-textbook-material) for recorded
+PDF paths and checkout availability. Check Git status before moving, renaming,
+or committing local PDFs.
 
-- `shared/statisticalrethinking2.pdf`
-- `shared/rethinking2_solutions.pdf`
-
-These files may be untracked local material. Check git status before moving,
-renaming, or committing them.
-
-Agent-friendly metadata for `shared/statisticalrethinking2.pdf` lives under
-`book/rethinking2/index/`. Rebuild it and the gitignored local text cache with:
-
-```bash
-python3 scripts/build_rethinking_index.py
-```
+The [textbook index owner](book/rethinking2/README.md) documents metadata and
+cache rebuild commands.
 
 Search the index first, then the generated `book/rethinking2/cache/` text. Use
 page markers in the cache to verify exact wording, equations, figures, and
@@ -70,3 +57,6 @@ Use Markdown files as agent-facing source material and durable context. Use
 single-file HTML under `site/` for human-facing study artifacts, especially
 when explaining methods, statistical concepts, assumptions, pitfalls, or
 interactive comparisons.
+
+[Curriculum maintenance](docs/curriculum-maintenance.md) owns the publication
+workflow and evidence limits; edit canonical Markdown before regenerating HTML.
