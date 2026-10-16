@@ -1,6 +1,6 @@
 # Statistical Rethinking local curriculum
 
-Updated: 2026-10-10 11:36:51 (Asia/Seoul)
+Updated: 2026-10-17 00:26:03 (Asia/Seoul)
 
 ## Current goal
 
@@ -14,6 +14,8 @@ curriculum artifacts do not establish learner completion or analysis reproductio
 — [evidence limits](docs/curriculum-maintenance.md#evidence-and-maintenance-limits).
 
 ## Decisions in force
+
+- [.ctxdata.json](.ctxdata.json) retains authored curriculum/source inputs pending Git tracking; textbook text caches and chapter splits are reproducible from the retained PDF via the documented index builder.
 
 - Markdown is canonical; edit its owner before regenerating HTML — [publication workflow](docs/curriculum-maintenance.md#publication-workflow).
 - Group related methods and route questions through existing modules — [Q&A index](projects/_meta/qna-index.md), [comparisons](projects/_meta/module-matrix.md).
