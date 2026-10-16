@@ -1,6 +1,6 @@
 # Statistical Rethinking local curriculum
 
-Updated: 2026-10-17 00:26:03 (Asia/Seoul)
+Updated: 2026-10-17 00:59:35 (Asia/Seoul)
 
 ## Current goal
 
@@ -14,6 +14,9 @@ curriculum artifacts do not establish learner completion or analysis reproductio
 — [evidence limits](docs/curriculum-maintenance.md#evidence-and-maintenance-limits).
 
 ## Decisions in force
+
+- Only exclusions marked `reproducible: true` in [.ctxdata.json](.ctxdata.json)
+  carry rebuild evidence; local-only excluded artifacts retain their existing owner.
 
 - [.ctxdata.json](.ctxdata.json) retains authored curriculum/source inputs pending Git tracking; textbook text caches and chapter splits are reproducible from the retained PDF via the documented index builder.
 
