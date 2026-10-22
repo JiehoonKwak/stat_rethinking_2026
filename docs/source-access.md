@@ -25,3 +25,11 @@ on the working Mac and absent from fresh clones or worktrees. Do not commit them
 The [textbook index owner](../book/rethinking2/README.md) documents metadata,
 cache rebuilding, and page-marked search. The cache is generated local search
 material; do not commit it or use it as a replacement for the source PDF.
+
+## Retention and rebuild evidence
+
+[.ctxdata.json](../.ctxdata.json) declares retained local curriculum/source
+inputs and authored artifacts pending Git tracking. Only exclusions marked
+`reproducible: true` carry rebuild evidence; other local-only excluded artifacts
+retain their existing owner. Textbook text caches and chapter splits are
+reproducible from the retained PDF through the documented index builder.
